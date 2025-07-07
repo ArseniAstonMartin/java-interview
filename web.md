@@ -38,9 +38,13 @@
 
 ### Postman
 - Postman – это популярное ПО для тестирования API. Оно помогает разработчикам отправлять HTTP-запросы, просматривать ответы и автоматизировать тестирование. Postman поддерживает различные типы запросов, автоматизацию тестов на JavaScript, организацию запросов в коллекции и использование окружений. В одном из проектов я использовал Postman для тестирования REST API, что помогло выявить и исправить критические ошибки, улучшив стабильность приложения.
+
+[к оглавлению](#Основы-web)
 ### Сервлеты
 - Диспетчер сервлетов это как будто мапа, которая знает какие конкретно методы приложения надо вызывать, когда приходит определенный запрос
 - Сервлет - это Java-объект, который умеет принимать HTTP-запросы и возвращать HTTP-ответы.
+
+[к оглавлению](#Основы-web)
 ### Rest
 - Representational state transfer - интерфейс приложения, построенный по определённым стандартизированным правилам.
 - Resources - главный компонент в Rest, они описывают последовательность зависимых сущностей в видей URL. Используются только существительные в названии. /users/itsfield/itsid
@@ -52,6 +56,8 @@
 	2. Resource - добавление разных ресурсов вместо одного "/api"
 	3. Http verbs - GET, PUT, DELETE, POST
 	4. Hypermedia countrols - сервер кроме основного ресурса возвращает ссылки на доступные ресурсы из текущего представления (страницы) приложения
+
+[к оглавлению](#Основы-web)
 ### Http
 - Http - hypertext transfer protocol
 - Https - Secure Http, работает с помощью протокола TLS, который убеждается что сайт достаточно шифрует данные, таким образом при перехвате их нельзя прочитать и использовать.
@@ -72,10 +78,14 @@
 	4. Delete - повторное удаление ничего не меняет, и не приводит к ошибке
 	5. Put - повторное обновление одних и тех же полей, ничего не меняет
 	6. Post и Patch например не являются идемпотентными, т.к. Post создаёт новый ресурс на сервере, а Patch (по логике это обновление, но которое автоматически в разных случаях может сделать другую операцию, например перевод enum ресурса в следующий этап, или инкремент продвинуть)
+
+[к оглавлению](#Основы-web)
 ### Xml Json
 - Форматы файлов для обмена данными
 - XML - открывающие закрывающие теги, используется не только для обмена данными но и для конфигурационных файлов
 - Json - это пары ключ значение
+
+[к оглавлению](#Основы-web)
 ### gRPC + Protobuf
 **gRPC**  
 - A high-performance remote procedure calls framework for calling methods on remote services as if they were local.  
@@ -99,10 +109,14 @@
 - Use gRPC starter library.  
 - Define `.proto` files.  
 - Implement services using `@GrpcService` and call with `@GrpcClient`.  
+
+[к оглавлению](#Основы-web)
 ### WebSocket 
 - Двусторонняя связь клиента и сервера, для непрерывной обмена данными без дополнительных запросов.
 - Сначала происходит один HTTP Запрос на рукопожатие, если сервер отвечает положительно, то HTTP меняется на WebSocket, и дальше держится эта связь, и сервер сразу же отсылает новые данные если они у него появляются
 - Примеры: Мессенджеры, Игры, GPS
+
+[к оглавлению](#Основы-web)
 ### Exception Handling
 - **Global exception handling** 
 ```java
@@ -116,6 +130,7 @@ public class GlobalExceptionHandler {
     }
 }
 ```
+[к оглавлению](#Основы-web)
 ### Spring Web
 - RestController - returns JSON
 - Controller - return web-view or redirect.
@@ -124,6 +139,8 @@ public class GlobalExceptionHandler {
 - @PutMapping for updating
 - @DeleteMapping
 - model - view - controller
+
+[к оглавлению](#Основы-web)
 ### Getting data from request
 
 `@PathVariable` — Extracting data from the URI path
@@ -174,10 +191,13 @@ public Dashboard getDashboard(@CookieValue("sessionId") String sessionId) { ... 
 ```
 **Example Cookie**: `sessionId=xyz789`
 
+[к оглавлению](#Основы-web)
 ### **ResponseEntity** or Object:
 Response entity is used if:
 - I need to send different HTTP Status Codes for different kinds of failures or validation errors.
 - I need to add headers.
+
+[к оглавлению](#Основы-web)
 ### DTO
 DTO (Data Transfer Object) - object used by app layers to communicate
 
@@ -199,6 +219,7 @@ public interface EmployeeMapper {
     EmployeeDTO employeeToEmployeeDTO(Employee entity);
 }
 ```
+[к оглавлению](#Основы-web)
 ### Что такое _WWW_?
 __WWW, World Wide Web (Всемирная паутина)__ — распределённая система, предоставляющая доступ к связанным между собой документам, расположенным на различных компьютерах, подключённых к Интернету. Для обозначения этого термина также используют слово _web_.
 
