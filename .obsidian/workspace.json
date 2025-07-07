@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d45bedb105e5b875",
+        "id": "e572ebd09f07e667",
         "type": "tabs",
         "children": [
           {
-            "id": "da7c6477a25cec09",
+            "id": "8bd0d523560f29c0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "web.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "web"
+              "title": "New tab"
             }
           }
         ]
@@ -168,10 +164,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "da7c6477a25cec09",
+  "active": "8bd0d523560f29c0",
   "lastOpenFiles": [
-    "servlets.md",
     "web.md",
+    "servlets.md",
     "book/grokking-the-java-interview.pdf",
     "book/clean_code.pdf",
     "book/Spring Start Here.pdf",
